@@ -44,13 +44,15 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("LOGIN_DEBUG", "Usuário: " + usuario);
                 Log.d("LOGIN_DEBUG", "Senha: " + senha);
 
-                BdoRepository repository = new BdoRepository();
+                BdoRepository repository = new BdoRepository(MainActivity.this);
                 boolean resultado = repository.VerficacaoLogin(usuario, senha);
+
 
                 Log.d("LOGIN_DEBUG", "Resultado do login: " + resultado);
 
                 if (resultado) {
-                    startActivity(new Intent(MainActivity.this, Tela_menu.class));
+                    Intent intent = new Intent(MainActivity.this, Tela_menu.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(MainActivity.this, "Login inválido", Toast.LENGTH_SHORT).show();
                 }
