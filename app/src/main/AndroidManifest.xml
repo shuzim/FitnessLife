@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnesslife"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,32 +13,63 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FitnessLife"
-        tools:targetApi="31">
+        android:theme="@style/Theme.FitnessLife">
+
+        <!-- Activity de Login - Ponto de entrada principal -->
         <activity
-            android:name=".Tela_menu"
-            android:exported="false" />
-        <activity
-            android:name=".Tela_cadastro2"
-            android:exported="false" />
-        <activity
-            android:name=".Tela_cadastro1"
-            android:exported="false" />
-        <activity
-            android:name=".Tela_Cadastro1"
-            android:exported="false" />
-        <activity
-            android:name=".Tela_de_cadastro"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".activities.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FitnessLife">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Activities de Cadastro -->
+        <activity
+            android:name=".activities.CadastroParte1Activity"
+            android:exported="false"
+            android:theme="@style/Theme.FitnessLife"
+            android:parentActivityName=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.CadastroParte2Activity"
+            android:exported="false"
+            android:theme="@style/Theme.FitnessLife"
+            android:parentActivityName=".activities.CadastroParte1Activity" />
+
+        <!-- Activity do Menu Principal -->
+        <activity
+            android:name=".activities.MenuActivity"
+            android:exported="false"
+            android:label="Menu Principal"
+            android:theme="@style/Theme.FitnessLife" />
+        <!-- Se MenuActivity usar Compose, o NoActionBar é apropriado.
+             Se usar Views tradicionais e você quiser a ActionBar do tema,
+             remova android:theme ou ajuste para @style/Theme.FitnessLife -->
+
+        <!-- Activities das telas do menu -->
+        <activity
+            android:name=".activities.PerfilNutricionalActivity"
+            android:exported="false"
+            android:label="Perfil Nutricional"
+            android:theme="@style/Theme.FitnessLife" />
+        <activity
+            android:name=".activities.PlanoRefeicoesActivity"
+            android:exported="false"
+            android:label="Plano de Refeições"
+            android:theme="@style/Theme.FitnessLife" />
+        <activity
+            android:name=".activities.ReceitasSaudaveisActivity"
+            android:exported="false"
+            android:label="Receitas Saudáveis"
+            android:theme="@style/Theme.FitnessLife" />
+        <activity
+            android:name=".activities.RastreamentoAlimentosActivity"
+            android:exported="false"
+            android:label="Rastreamento de Alimentos"
+            android:theme="@style/Theme.FitnessLife" />
+
     </application>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 </manifest>

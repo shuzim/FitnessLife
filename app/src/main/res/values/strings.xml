@@ -1,3 +1,48 @@
 <resources>
-    <string name="app_name">FitnessLife</string>
+    <string name="app_name">fitnesslife</string>
+    <string name="action_go">Go</string>
+    <string name="baking_title">Baking with Gemini</string>
+    <string name="label_prompt">Prompt</string>
+    <string name="prompt_placeholder">Provide a recipe for the baked goods in the image</string>
+    <string name="image1_description">Cupcake</string>
+    <string name="image2_description">Cookies</string>
+    <string name="image3_description">Cake</string>
+    <string name="results_placeholder">(Results will appear here)</string>
+
+        <!-- Tela de Login -->
+    <string name="login_titulo">Login</string>
+    <string name="hint_email_ou_usuario">Email ou Usuário</string>
+    <string name="hint_senha">Senha</string>
+    <string name="botao_entrar">Entrar</string>
+    <string name="texto_ou_cadastre_se">Não tem uma conta? Cadastre-se</string>
+    <string name="login_sucesso">Login bem-sucedido!</string>
+    <string name="login_falhou">Usuário ou senha inválidos.</string>
+
+        <!-- Tela de Cadastro Parte 1 -->
+    <string name="cadastro_p1_titulo">Cadastro - Parte 1</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_sobrenome">Sobrenome</string>
+    <string name="hint_email">Email</string>
+    <string name="botao_proximo">Próximo</string>
+    <string name="campos_obrigatorios">Todos os campos são obrigatórios.</string>
+
+        <!-- Tela de Cadastro Parte 2 -->
+    <string name="cadastro_p2_titulo">Cadastro - Parte 2</string>
+    <string name="hint_idade">Idade</string>
+    <string name="hint_sexo">Sexo</string>
+    <string name="hint_altura_cm">Altura (cm)</string>
+    <string name="hint_peso_kg">Peso (kg)</string>
+    <string name="botao_cadastrar">Cadastrar</string>
+    <string name="cadastro_sucesso">Cadastro realizado com sucesso!</string>
+    <string name="cadastro_falhou">Erro ao realizar cadastro.</string>
+    <string name="email_ja_cadastrado">Este email já está cadastrado.</string>
+
+        <!-- Menu Principal -->
+    <string name="menu_titulo">Menu Principal</string>
+    <string name="menu_perfil_nutricional">Perfil Nutricional</string>
+    <string name="menu_plano_refeicoes">Plano de Refeições</string>
+    <string name="menu_receitas_saudaveis">Receitas Saudáveis</string>
+    <string name="menu_rastreamento_alimentos">Rastreamento de Ingestão de Alimentos</string>
+
+    <!-- <string name="app_name">FitnessLife</string> -->
 </resources>

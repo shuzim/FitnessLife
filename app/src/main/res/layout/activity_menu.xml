@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".activities.MenuActivity">
+
+    <TextView
+        android:id="@+id/textViewMenuTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_titulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/buttonPerfilNutricional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_perfil_nutricional"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonPlanoRefeicoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_plano_refeicoes"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonReceitasSaudaveis"
+android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_receitas_saudaveis"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonRastreamentoAlimentos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_rastreamento_alimentos"/>
+
+</LinearLayout>
